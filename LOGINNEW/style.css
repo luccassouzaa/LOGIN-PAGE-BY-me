@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(107deg, #784cd6 0%, rgba(13, 4, 33, 0.8) 90.74%); */
+    background: linear-gradient(140deg, rgb(12, 9, 20), rgb(8, 0, 36));
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'khand';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    padding: 2rem;
+    width: 500px;
+    height: 580px;
+    border-radius: 10px;
+    position: relative;
+    background: linear-gradient(to left, #200758, rgb(49, 6, 90)) ;
+    box-shadow: 0px 0px 240px 60px rgba(36, 0, 114, 0.29);
+}
+
+.login-card::before{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background-color: #2d163d9c;
+    inset: 0;
+    transform: rotate(-13deg);
+    z-index: -1;
+}
+
+.login-header{
+    /* background-color: #00CADC; */
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 255, 221); */
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #fff;
+    margin-bottom: 1.4rem;
+}
+
+.login-card a{
+    text-decoration: none;
+}
+
+.login-card a:hover{
+    text-decoration: underline;
+}
+
+.login-main{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .7rem;
+    /* background-color: wheat; */
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.login-main .form-items{
+    position: relative;
+}
+
+.login-main .form-items-email{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+.login-main .form-items-password{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+.login-main .form-items-checkbox{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.login-card input[type='text'],
+.login-card input[type='password']{
+    margin-top: .2rem;
+    letter-spacing: 2px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: 'khand';
+    background: #1A151E;
+    color: white;
+    padding: .7rem 1.5rem;
+    border-radius: 1px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.form-items-checkbox .form-items-remeberPassword{
+    letter-spacing: 1.2px;
+    color: #00FFF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.form-items-checkbox .form-items-forgotPassword a{
+    letter-spacing: 1px;
+    color: #FF0000;
+    font-size: 1.3rem;
+}
+
+.form-items-btn{
+    margin-top: .1rem;
+    letter-spacing: 10px;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+    font-family: 'khand';
+    color: white;
+    padding: .7rem 1.5rem;
+    width: 100%;
+    transition: background .5s;
+    background: #00b8c9;
+    box-shadow: 0px 0px 20px #00eaff18;
+    border-radius: 150px;
+}
+
+.form-items-btn:hover{
+    cursor: pointer;
+    background: #9efcff;
+}
+
+.login-footer{
+    font-size: .8rem;
+    /* background-color: #7bff00; */
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-footer a{
+    color: #00b8c9;
+}
+
+.login-footer a:hover{
+    cursor: pointer;
+    color: #00b8c9;
+    transform: scale(1.1);
+}
+
+.login-footer-social-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.login-footer-social-btns a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: black; */
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    transition: all .5s;
+    box-shadow: 0px 0px 20px #8df5ff;
+}
+
+.login-footer-social-btns a:hover{
+    background: #00b8c9;
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    body{
+        padding: 1rem 0;
+    }
+
+    .login-card{
+        width: 300px;
+        padding: 1rem;
+    }
+}
